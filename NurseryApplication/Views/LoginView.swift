@@ -12,7 +12,14 @@ struct LoginView: View {
     
     var body: some View {
         VStack{
-            Button("LogIn"){
+            Button("Google"){
+                loginVM.action_login()
+            }
+            Button("Facebook"){
+                loginVM.action_login()
+            }
+            
+            Button("Apple"){
                 loginVM.action_login()
             }
         }
